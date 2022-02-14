@@ -20,3 +20,5 @@ jQuery(window).scroll(function () {
         jQuery("#backtotop").removeClass("visible");
     }
 });
+
+jQuery('#mainav form select option').last().wrapInner("<span class=\"new\"><img src=\"images/645px-Love_Heart_SVG.svg.png\"></span>");

@@ -224,6 +224,7 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
 #mainav form select{width:100%; padding:5px; border:none;}
 #mainav form select option{margin:5px; padding:0; border:none;}
 
+
 /* Breadcrumb */
 #breadcrumb{padding:150px 0 30px;}
 #breadcrumb ul{margin:0; padding:0; list-style:none; text-transform:uppercase;}
@@ -594,9 +595,8 @@ table a, #comments a{background-color:inherit;}
 }
 
 .alert-simple.alert-primary {
-	font-size: 1.5rem;
+	font-size: 2.5rem;
 	margin: auto;
-	width: 32%;
 	border: 1px solid rgb(227 6 241 / 81%);
 	background-color: rgb(220 1 213 / 16%);
 	box-shadow: 0px 0px 2px #e403ff;
@@ -604,6 +604,7 @@ table a, #comments a{background-color:inherit;}
 	text-shadow: 2px 1px #00040a;
 	transition: 0.5s;
 	cursor: pointer;
+	line-height: 3rem;
 }
 
 .alert-primary:hover{
@@ -672,6 +673,14 @@ table a, #comments a{background-color:inherit;}
 	animation: blink-1 2s infinite both;
 }
 
+.new{
+	position: absolute;
+	top: -153px;
+	right: -172px;
+	animation: heartbeat 1s infinite;
+
+
+}
 
 /**
  * ----------------------------------------
@@ -699,4 +708,38 @@ table a, #comments a{background-color:inherit;}
 	75% {
 		opacity: 0;
 	}
+}
+
+@keyframes heartbeat
+{
+0%
+{
+	transform: scale( .75 );
+}
+20%
+{
+	transform: scale( 1 );
+}
+40%
+{
+	transform: scale( .75 );
+}
+60%
+{
+	transform: scale( 1 );
+}
+80%
+{
+	transform: scale( .75 );
+}
+100%
+{
+	transform: scale( .75 );
+}
+}
+
+body#top { background-image: url('../../images/645px-Love_Heart_SVG.svg.png'); background-repeat: repeat-y; background-position: left bottom; -webkit-animation: slide 5s linear infinite; }
+@-webkit-keyframes slide {
+	from { background-position: left 0; }
+	to { background-position: left -1790px; }
 }
